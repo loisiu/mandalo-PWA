@@ -6,7 +6,7 @@
   "theme_color": "#000000",
   "orientation": "portrait",
   "display": "standalone",
-  "start_url": "https://loisiu.github.io/mandalo/",
+  "start_url": "http://127.0.0.1:5500/index.html",
   "scope": "./",
   "lang": "en",
   "icons": [
