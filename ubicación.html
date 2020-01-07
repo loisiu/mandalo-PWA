@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UBICACIÓN</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 </head>
 <body>
 
@@ -13,8 +14,22 @@
         body {
             background-image: url(img/fondo\ web\ negro.jpeg);
         }
+
+        div.mapa {
+            height: 420px;
+            background-color: green;
+        }
+
+       
         
     </style>
+
+    <div id="mapa" class="mapa"></div>
+
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  <script src="main.js"></script>
+
+    
     
 </body>
 </html>
