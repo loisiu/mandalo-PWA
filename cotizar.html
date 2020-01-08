@@ -11,12 +11,12 @@
 
 <body>
     <style>
-        * {
+       * {
       box-sizing: border-box;
   }
   
   body {
-      background: inear-gradient(rgba(0,0,1,0.7));
+      background-image: url(img/fondo\ web\ negro.jpeg);
       color:rgb(255, 239, 16);
       line-height: 1.6;
       font-family: 'Quicksand', sans-serif;
@@ -29,6 +29,10 @@
       margin-right: auto;
       padding: 1.5em;
   }
+
+  .contact-info p{
+         color: black;
+     }
   
   ul {
       list-style: none;
@@ -36,7 +40,7 @@
   }
   
   .logo {
-      color: blue;
+      color: #000090;
       text-align: center;
       font-size: 3em;
   }
@@ -54,7 +58,7 @@
   }
   
   .contact-form {
-      background:blue;
+      background: #000090;
   }
   
   .contact-form form {
@@ -85,8 +89,8 @@
       border: none;
       background: none;
       outline: 0;
-      color:rgba(0,0,1,0.7);
-      border-bottom: 1px solid rgb(255, 239, 16);
+      color:#000090;
+      border-bottom: 1px solid white;
   }
   
   .contact-form form button {
@@ -116,10 +120,20 @@
   }
   
   /* LARGE SIZE */
-  @media(min-width: 700px) {
-      body {
+
+  /* @media only screen and (max-width: 900px){
+    body {
           padding: 0 4em;
       }
+
+      h1 {
+          padding-top: 80px;
+      }
+
+      h4 {
+          color: #000090;
+      }
+
       .contact-wrapper {
           display: grid;
           grid-template-columns: 2fr 1fr;
@@ -134,28 +148,123 @@
       }
   
       .botones {
-        background: rgb(255, 239, 16);
-        color: #222222;
+        background: yellow;
+        color: black;
         width: 10rem;
         height: 2.5rem;
   
       }
       .botones a{
-          color: #000000;
+          color: black;
       }
-  }  
+  }
+  
+  .block button {
+      font-weight: bold;
+   } */
+
+  @media( max-width:800px) {
+    body {
+          /* padding: 0 4em; */
+      }
+
+      h1 {
+          padding-top: 80px;
+      }
+
+      h4 {
+          color: #000090;
+      }
+
+     .contact-info p{
+         color: black;
+     }
+
+      .contact-wrapper {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+      }
+      .contact-wrapper > * {
+          padding: 2em;
+      }
+      .contact-info h4,
+      .contact-info ul,
+      .contact-info p {
+          text-align: left;
+      }
+  
+      .botones {
+        background: yellow;
+        color: black;
+        width: 10rem;
+        height: 2.5rem;
+  
+      }
+      .botones a{
+          color: black;
+      }
+  }
+  
+  .block button {
+      font-weight: bold;
+  }
+      
+  
+
+  @media(min-width: 768px) {
+      body {
+          padding: 0 4em;
+      }
+      h4 {
+          color: #000090;
+      }
+     .contact-info p{
+         color: black;
+     }
+      .contact-wrapper {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+      }
+      .contact-wrapper > * {
+          padding: 2em;
+      }
+      .contact-info h4,
+      .contact-info ul,
+      .contact-info p {
+          text-align: left;
+      }
+  
+      .botones {
+        background: yellow;
+        color: black;
+        width: 10rem;
+        height: 2.5rem;
+  
+      }
+      .botones a{
+          color: black;
+
+      }
+
+      .block button {
+      font-weight: bold;
+  }
+
+  .block button {
+      font-weight: bold;
+  }
+
+  }
+  
+  
+
           
      </style>
       
       <div class="content">
-              <div class="titulo"> 
                       <button class="botones">
                          <a href="index.html">Volver</a>
-                      </button>
-                  </form>   
-              </div>
-  
-          <h1 class="logo">Mandalo<span>Ya</span></h1>
+                      </button> 
   
           <div class="contact-wrapper animated bounceInUp">
               <div class="contact-form">
@@ -187,6 +296,21 @@
                           </button>
                       </p>
                   </form>
+                </div>
+
+                <div class="contact-info">
+                    <h4>Informes</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i>Querétaro</li>
+                        <li><i class="fas fa-phone"></i>(442) 442 4444/li>
+                        <li><i class="fas fa-envelope-open-text"></i>mandalomex@gmail.com</li>
+                    </ul>
+                    <p>Por favor envianos tus comentarios estamos para servirte</p>
+                    <p>mandalo.com</p>
+                </div>
+        </div>
+            <br>
+    </div>
      
 </body>       
 

@@ -11,6 +11,10 @@
   h1, h1, h3, h4, p {
     color: white;
   }
+
+  h2 {
+    font-weight: bold;
+  }
   
   .top-nav-bar{
     height: 57px;
@@ -296,12 +300,21 @@
     width: 100%;
   
   }
-  @media only screen and (max-width: 280px){
-    .product-top{
-        position: fixed;
-    } 
-  
-  }
+  .row li:nth-child(2n+1) {
+    clear: both;
+}
+@media (min-width:768px){
+    .row li {
+        width: 33.3%;
+    }
+    .row li:nth-child(2n+1) {
+        clear: unset;
+    }
+    .row li:nth-child(3n+1) {
+        clear: both;
+    }
+}
+
   
   .overlay-right{
     display: block;

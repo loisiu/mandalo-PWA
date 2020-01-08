@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mandalo</title>
-  <meta name="description" content="Bienvenid@s a #Plataforma para mensajería">
+  <meta name="description" content="Bienvenid@s a Plataforma para mensajería">
 
   <meta name="theme-color" content="#F000000">
   <meta name="MobileOptimized" content="width">
@@ -23,7 +23,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="./styles.css">
+   <link rel="stylesheet" href="./styles.css"> 
 
 </head>
 
@@ -31,7 +31,97 @@
 
   <style>
 
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+51,a849a3+100 */
+    background-image: url(img/fondo\ web\ negro.jpeg); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3',GradientType=0 ); /* IE6-9 */
+    background-attachment: fixed;
+}
 
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+img {
+    max-width: 100%;
+}
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hero {
+    margin-bottom: 40px;
+}
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 60px;
+    color: #FFFF00;
+}
+.lista-productos {
+    padding: 0;
+    list-style: none;
+}
+.lista-productos li {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+/** 2(0) + 1 **/
+.lista-productos li:nth-child(2n+1) {
+    clear: both;
+}
+@media (min-width:768px){
+    .lista-productos li {
+        width: 33.3%;
+    }
+    .lista-productos li:nth-child(2n+1) {
+        clear: unset;
+    }
+    .lista-productos li:nth-child(3n+1) {
+        clear: both;
+    }
+}
+
+.lista-productos li img{
+    border: 4px solid #FFFF00;
+    transition: border-color .3s ease-in-out;
+}
+.lista-productos li img:hover {
+    border: 4px solid #FFFF00;
+}
+.lista-productos li p {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+span.precio {
+    color: #FFFF00;
+    font-size: 40px;
+}
+.boton {
+    background-color: #FFFF00;
+    padding: 10px 40px;
+    margin-top: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: background-color .3s ease-in-out;
+}
+.boton:hover {
+    background-color: #FFFF00;
+    font-weight: bold;
+    color: white;
+}
 
   </style>
 
@@ -66,6 +156,7 @@
    
    
    </div>
+  </section>
    <!-- comentar ctrl k c -->
    <!-- <div class="slider">
       <div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
@@ -90,12 +181,42 @@
               <li data-target="#slider" data-slide-to="3"></li>
           </ol>
       </div>
-    </div>   -->
-    </section>
+    </div>  
+    </section> -->
    
    <section class="featured-categories">
    <div class="container">
-     <ul>
+
+    <ul class="lista-productos">
+      <li>
+          <img src="img/servicios-256x256.png" alt="producto">
+         <a href="servicios.html"><p>SERVICIOS</p></a> 
+      </li>
+      <li>
+        <img src="img/destinos-256x256.png">  
+       <a href="destinos.html"> <p>DESTINOS</p></a>
+      </li>
+      <li>
+        <img src="img/contacto-256x256.png">  
+       <a href="contacto.html"> <p>CONTACTO</p></a>
+      </li>
+      <li>
+        <img src="img/ubicasion-256x256.png">  
+       <a href="ubicación.html"> <p>UBICACIÓN</p></a>
+      </li>
+      <li>
+        <img src="img/redes-256x256.png">  
+       <a href="redes.html"> <p>REDES SOCIALES</p></a>
+      </li>
+      <li>
+        <img src="img/promociones-256x256.png">  
+       <a href="promociones.html"> <p>PROMOCIONES</p></a>
+      </li>
+     
+   </ul>
+  </div>
+  </section>
+     <!-- <ul>
       <div class="row">
           <div class="col-md-4">
             <img src="img/servicios-256x256.png">
@@ -136,42 +257,43 @@
            </li> 
          </div>
      </div>
-   </ul>    
-   </div>
-   </section>
+   </ul>     -->
+   
       
-    <section class="website-features">
-     <div class="container">
-     <div class="row">
-     <div class="col-md-3 feature-box">
-     <i class="far fa-clock"></i> 
-     <div class="feature-text">
-     <p><b>entrega a tiempo</b></p> 
-     </div>
-     </div>
-     <div class="col-md-3 feature-box">
-         <i class="far fa-check-square"></i> 
-     <div class="feature-text">
-     <p><b>Satisfación</b> Garantizada.</p> 
-     </div>      
-     </div>
-     <div class="col-md-3 feature-box">
-     <i class="fas fa-shipping-fast"></i>
-     <div class="feature-text">
-     <p><b>Envios a Todo</b> CDMX-QRO.</p> 
-     </div>      
-     </div>
-     <div class="col-md-3 feature-box">
-         <i class="fab fa-cc-visa"></i> <i class="fab fa-cc-amex"></i> 
-     <div class="feature-text">
-     <p><b>Metodos</b> de Pago</p> 
-     </div>      
-     </div>         
-     </div> 
-     </div> 
-    </section>
-    <section class="footer">
-        <div class="row">
+      <!-- <section class="website-features">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-3 feature-box">
+      <i class="far fa-clock"></i> 
+      <div class="feature-text">
+      <p><b>entrega a tiempo</b></p> 
+      </div>
+      </div>
+      <div class="col-md-3 feature-box">
+          <i class="far fa-check-square"></i> 
+      <div class="feature-text">
+      <p><b>Satisfación</b> Garantizada.</p> 
+      </div>      
+      </div>
+      <div class="col-md-3 feature-box">
+      <i class="fas fa-shipping-fast"></i>
+      <div class="feature-text">
+      <p><b>Envios a Todo</b> CDMX-QRO.</p> 
+      </div>      
+      </div>
+      <div class="col-md-3 feature-box">
+          <i class="fab fa-cc-visa"></i> <i class="fab fa-cc-amex"></i> 
+      <div class="feature-text">
+      <p><b>Metodos</b> de Pago</p> 
+      </div>      
+      </div>         
+      </div> 
+      </div> 
+      </section> -->
+      <!-- <section class="footer">
+        <p>fjjvj</p>
+         </section> -->
+        <!--<div class="row">
           <div class="col-md-4">
               <h1>Enlaces</h1>
               <p>Politicas</p> 
@@ -197,9 +319,11 @@
          <hr>
          <p class= "todos-los-derechos-reservados"><i class="fa fa-registered"></i>vbrands Developers</p>
       </div>    
-    </section>
+    </section> -->
+
    
-   <script>
+   
+    <script>
    function openmenu(){
       document.getElementById("side-menu").style.display="block";
       document.getElementById("menu-btn").style.display="none";
@@ -212,7 +336,7 @@
    }
    </script>
    
-    <script src="./script.js"></script>
+    <script src="./script.js"></script> 
    
    </body>
  </html>

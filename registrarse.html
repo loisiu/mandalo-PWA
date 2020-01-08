@@ -15,7 +15,7 @@
       }
 
       body {
-         background: rgba(3, 3, 46, 0.9);
+         background-image: url(img/fondo\ web\ negro.jpeg); 
          margin: 0;
          font-family: sans-serif;
       }
@@ -33,7 +33,7 @@
       .formulario__titulo {
          text-align: center;
          margin-top: 0;
-         color: yellow;
+         color: #FFFF00;
       }
 
       .formulario__input, .formulario__label, .formulario__submit {
@@ -44,7 +44,7 @@
 
       .formulario__input {
          padding: 20px;
-         background: rgba(0, 0, 0, 0.1);
+         background: #000090
          border: 1px solid rgba(0, 0, 0, 0.3);
          margin-bottom: 40px;
       }
@@ -63,14 +63,14 @@
          position: absolute;
          margin-top: -85px;
          z-index: -20;
-         color: #202060;
+         color: #000090;
          transition: all 0.2s;
-         color: white;
+         color: #FFFF00;
       }
 
       .formulario__submit {
-         background: #202060;
-         color: yellow;
+         background: #000090;
+         color: #FFFF00;
          padding: 10px 20px;
          cursor: pointer;
          border: none;
@@ -87,10 +87,37 @@
          padding-right: 0;
       }
 
+      .botones {
+         background: yellow;
+         color: black;
+         width: 10rem;
+         height: 2.5rem;
+   
+       }
+       .botones a{
+           color: black;
+ 
+       }
+ 
+       .block button {
+       font-weight: bold;
+   }
+ 
+   .block button {
+       font-weight: bold;
+   }  
+
    </style>
 
+<div class="titulo"> 
+   <button class="botones">
+      <a href="index.html">Volver</a>
+   </button>
+</div>
+
+
    <form action="" class="formulario">
-      <img src="img/logo-mandalo240x240.png" alt="">
+      <img src="img/logo rey.jpeg" alt="">
       <h1 class="formulario__titulo">Registrarse</h1>
       <input type="text" class="formulario__input">
       <label for=""
